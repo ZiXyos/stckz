@@ -15,4 +15,5 @@ type Bucket interface {
 	Delete(context.Context, Key) error
 	List(context.Context, string) iter.Seq2[ObjectInfo, error]
 	PresignGet(context.Context, Key, time.Duration) (string, error)
+	//tests
 }
